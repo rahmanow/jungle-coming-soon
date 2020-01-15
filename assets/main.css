@@ -88,7 +88,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 70vh;
   padding-top: 0vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -917,6 +917,7 @@ a {
   z-index: 90;
   width: 100%;
   padding-right: 10vh;
+  max-height: 50vh;
 }
 
 .feature-wrap {
@@ -1234,7 +1235,6 @@ a {
 }
 
 .div-block-13 {
-  margin-top: 20;
   clear: none;
   z-index: 999999;
   display: -webkit-box;
@@ -1261,16 +1261,6 @@ a {
   font-family: Spacegrotesk, sans-serif;
   color: #fff;
 }
-
-#jg-rotate {
-  position: relative;
-  left: 1vh;
-  top: 140px;
-  bottom: auto;
-  width:25px;
-  transform: rotate(270deg);
-}
-
 .hero-section {
   display: block;
   padding-top: 100px;
@@ -1416,6 +1406,9 @@ a {
     padding-left: 18px;
   }
   .heading-3 {
+    font-size: 8vw;
+  }
+  .heading-3 > span {
     font-size: 8vw;
   }
 }
@@ -1656,6 +1649,10 @@ a {
     font-size: 40px;
   }
   .heading-3 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+  .heading-3 > span{
     font-size: 42px;
     line-height: 56px;
   }
