@@ -303,19 +303,7 @@ a {
 }
 
 .hero {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 999999;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: auto;
-  padding: 0px 10vw;
-  border: 1px none #000;
-  background-color: transparent;
+
 }
 
 .nav {
@@ -357,12 +345,14 @@ a {
 .body {
   background-color: transparent;
   background-image: url("bg.png");
-  background-position: 50% 50%;
-  background-size: 520px;
-  background-repeat: repeat;
-  background-attachment: scroll;
+  background-position: -25px -50px;
+  background-size: calc(100% + 50px);
   font-family: 'Gothic A1', sans-serif;
+  top: 0;
+  z-index: 0;
+  position: fixed;
     cursor:nw-resize;
+  width: 100%;
 }
 
 .heading {
@@ -1244,15 +1234,20 @@ a {
 }
 
 .div-block-13 {
-  position: absolute;
-  left: 5vh;
-  top: 5vh;
-  margin-left: -15px;
+  margin-top: 20;
   clear: none;
+  z-index: 999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  border: 1px none #000;
+  background-color: transparent;
 }
 
 .heading-4 {
-  margin: 0px auto;
+  margin: 0px;
   padding: 4px 15px 0px;
   border-style: solid;
   border-width: 2px;
@@ -1263,12 +1258,17 @@ a {
 }
 
 .paragraph-2 {
-  position: relative;
-  left: 5vh;
-  top: 140px;
-  bottom: auto;
   font-family: Spacegrotesk, sans-serif;
   color: #fff;
+}
+
+#jg-rotate {
+  position: relative;
+  left: 1vh;
+  top: 140px;
+  bottom: auto;
+  width:25px;
+  transform: rotate(270deg);
 }
 
 .hero-section {
