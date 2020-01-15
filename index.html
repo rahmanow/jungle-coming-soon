@@ -15,6 +15,10 @@
     <!-- Place your stylesheet here-->
     <link href="assets/main.css" rel="stylesheet" type="text/css">
     <style>
+        .body {
+            font-family: 'Spacegrotesk', 'OpenSans';
+        }
+
         .row-welcome {
             height: 65vh;
 
@@ -34,26 +38,6 @@
             width: 20px;
             transform: rotate(270deg);
         }
-        @media (max-width: 479px) {
-            .col-12 {
-                flex: none;
-                margin-left: 1vh;
-            }
-            .row-email {
-                height: 35vh;
-            }
-            .heading-3 > span {
-                font-size: 35px;
-            }
-
-            .heading-4 {
-                padding: 0 12px 0px;
-                border-radius: 25px;
-                font-size: 20px;
-                line-height: 35px;
-            }
-        }
-
 
         /* The sidepanel menu */
         .sidepanel {
@@ -66,7 +50,7 @@
             background-color: #fff; /* Black*/
             overflow-x: hidden; /* Disable horizontal scroll */
             padding-top: 16vh; /* Place content 60px from the top */
-            transition: 0.6s; /* 0.5 second transition effect to slide in the sidepanel */
+            transition: 0.4s; /* 0.5 second transition effect to slide in the sidepanel */
         }
 
         /* The sidepanel links */
@@ -89,39 +73,137 @@
             position: absolute;
             top: 25px;
             left: 20px;
-            font-size: 26px;
+            font-size: 25px;
             color: #333;
             margin-left: 4px;
-            padding: 0 13px 0;
+            padding: 1px 14px 0;
             border-style: solid;
             border-width: 2px;
             border-color: #333;
             border-radius: 30px;
-            line-height: 41px;
+            line-height: 46px;
+            font-weight: bold;
         }
 
         .jg-row {
-            width: 85vh;
+            width: 65%;
         }
         .jg-row a {
             padding: 15px 8px 8px 0px;
             text-decoration: underline;
-            font-size: 18px;
+            font-size: 20px;
             color: #333;
             display: block;
             transition: none;
-            margin-left: 10vh;
+            margin-left: 8vh;
         }
 
         .lead {
-            font-size: 2.20rem;
+            font-size: 2.1rem;
             font-weight: bold;
-            margin-left: 10vh;
-            margin-right: 10vh;
+            margin: 10vh 6vh 2vh 8vh;
             line-height: initial;
             font-family: 'Spacegrotesk';
             color: #111;
         }
+        .row.jg-row-1 {
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+            display: grid;
+            width: 20vh;
+        }
+
+        .heading-3 {
+            font-size: 13vh;
+        }
+        .heading-3 > span {
+            font-size: 13vh;
+        }
+
+
+        @media (max-width: 1220px) {
+            .jg-row {
+                /* width: 70vh;*/
+            }
+            .lead {
+                font-size: 2rem;
+            }
+            .heading-3 {
+                font-size: 12vh;
+            }
+            .heading-3 > span {
+                font-size: 12vh;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .lead {
+                font-size: 1.7rem;
+            }
+            .jg-row {
+                /*width: 60vh;*/
+            }
+            .jg-row {
+                margin-left: 6vh;
+            }
+            .heading-3 {
+                font-size: 9vh;
+            }
+            .heading-3 > span {
+                font-size: 9vh;
+            }
+
+        }
+        @media (max-width: 767px) {
+            .lead {
+                font-size: 1.6rem;
+            }
+            .jg-row {
+               /* width: 35vh;*/
+            }
+            .heading-3 {
+                font-size: 8.5vh;
+            }
+            .heading-3 > span {
+                font-size: 8.5vh;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .col-12 {
+                flex: none;
+                margin-left: 1vh;
+            }
+            .row-email {
+                height: 35vh;
+            }
+            .heading-3 > span {
+                font-size: 35px;
+            }
+
+            .heading-3 {
+                font-size: 35px;
+            }
+
+            .heading-4 {
+                padding: 0 12px 0px;
+                border-radius: 25px;
+                font-size: 20px;
+                line-height: 35px;
+            }
+            .lead {
+                font-size: 1rem;
+            }
+            .jg-row a{
+                font-size: 0.8rem;
+            }
+            .jg-row-1 span {
+                font-size: 0.8rem;
+            }
+
+        }
+
 
     </style>
 </head>
@@ -130,25 +212,25 @@
     <main role="main" class="container-fluid">
         <div class="row">
             <div class="col-2">
-                <div class="div-block-13 mt-4 ml-4" onclick="openNav()">
-                    <h1 class="heading-4">?</h1>
+                <div class="div-block-13 mt-4 ml-4">
+                    <h1 class="heading-4" onclick="openNav()">?</h1>
                 </div>
 
                 <!-- Large modal -->
                 <div id="jungleSide" class="sidepanel">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="row jg-row">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+                    <div class="row jg-row ml-">
                         <p class="lead">
                             Junge ist eine neue Agentür für digitale Kommunikation. Wir helfen Marken und Unternehmen dabei ihren Weg durch den digitalen Dschungel zu finden.
                         </p>
-                        <a href="#">Haben wir interesse geweckt? <br /> Dann sprechen Sie uns an.</a>
+                        <a href="mailto:hi@jungle.guide">Haben wir interesse geweckt? <br /> Dann sprechen Sie uns an.</a>
 
 
                     </div>
 
-                    <div class="row">
-
-
+                    <div class="row jg-row-1">
+                        <span>t: 0176 3213 7779</span>
+                        <span>m: hi@jungle.guide </span>
                     </div>
                 </div>
 
@@ -198,6 +280,7 @@
     <script src="assets/popper.min.js"></script>
     <script src="assets/bootstrap.min.js"></script>
     <script src="assets/anime.min.js"></script>
+    <script src="assets/main.js"></script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 
     <script>
@@ -280,7 +363,7 @@
 
         /* Set the width of the sidebar to 250px (show it) */
         function openNav() {
-            document.getElementById("jungleSide").style.width = "80vh";
+            document.getElementById("jungleSide").style.width = "80%";
         }
 
         /* Set the width of the sidebar to 0 (hide it) */

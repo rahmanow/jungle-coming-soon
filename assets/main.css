@@ -347,11 +347,10 @@ a {
   background-image: url("bg.png");
   background-position: -25px -50px;
   background-size: calc(100% + 50px);
-  font-family: 'Gothic A1', sans-serif;
   top: 0;
   z-index: 0;
   position: fixed;
-    cursor:nw-resize;
+  cursor:nw-resize;
   width: 100%;
 }
 
