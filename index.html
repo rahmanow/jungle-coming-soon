@@ -81,16 +81,46 @@
 
         /* When you mouse over the navigation links, change their color */
         .sidepanel a:hover {
-            color: #f1f1f1;
+            color: #666;
         }
 
         /* Position and style the close button (top right corner) */
         .sidepanel .closebtn {
             position: absolute;
-            top: 16;
-            left: 10px;
-            font-size: 36px;
+            top: 25px;
+            left: 20px;
+            font-size: 26px;
+            color: #333;
             margin-left: 4px;
+            padding: 0 13px 0;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #333;
+            border-radius: 30px;
+            line-height: 41px;
+        }
+
+        .jg-row {
+            width: 85vh;
+        }
+        .jg-row a {
+            padding: 15px 8px 8px 0px;
+            text-decoration: underline;
+            font-size: 18px;
+            color: #333;
+            display: block;
+            transition: none;
+            margin-left: 10vh;
+        }
+
+        .lead {
+            font-size: 2.20rem;
+            font-weight: bold;
+            margin-left: 10vh;
+            margin-right: 10vh;
+            line-height: initial;
+            font-family: 'Spacegrotesk';
+            color: #111;
         }
 
     </style>
@@ -107,7 +137,7 @@
                 <!-- Large modal -->
                 <div id="jungleSide" class="sidepanel">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="row">
+                    <div class="row jg-row">
                         <p class="lead">
                             Junge ist eine neue Agentür für digitale Kommunikation. Wir helfen Marken und Unternehmen dabei ihren Weg durch den digitalen Dschungel zu finden.
                         </p>
