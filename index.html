@@ -111,23 +111,216 @@
             right: 25px;
             bottom: 20px;
             display: grid;
-            width: 20vh;
+            width: 170px;
         }
 
         .heading-3 {
             font-size: 13vh;
+            margin-bottom: 5px;
         }
         .heading-3 > span {
             font-size: 13vh;
         }
 
 
-        @media (max-width: 1220px) {
-            .jg-row {
-                /* width: 70vh;*/
-            }
+        /*.Iam {
+            padding: 2em 5em;
+            font: normal 40px/50px Montserrat, sans-serif;
+            color: #999;
+        }*/
+        .Iam p {
+            height: 50px;
+            float: left;
+            margin-right: 0.3em;
+            font-size: 30px;
+        }
+        .Iam b {
+            float: left;
+            overflow: hidden;
+            position: relative;
+            height: 80px;
+            top: 0;
+        }
+        .Iam .innerIam {
+            display: inline-block;
+            color: #fff;
+            position: relative;
+            white-space: nowrap;
+            font-size: 13vh;
+            line-height: 130px;
+            top: -27px;
+            left: 0;
+
+
+            /*animation*/
+            -webkit-animation:move 5s;
+            -moz-animation:move 5s;
+            -ms-animation:move 5s;
+            -o-animation:move 5s;
+            animation:move 5s;
+            /*animation-iteration-count*/
+            -webkit-animation-iteration-count:infinite;
+            -moz-animation-iteration-count:infinite;
+            -ms-animation-iteration-count:infinite;
+            -o-animation-iteration-count:infinite;
+            animation-iteration-count:infinite;
+            /*animation-delay*/
+            -webkit-animation-delay:1s;
+            -moz-animation-delay:1s;
+            -ms-animation-delay:1s;
+            -o-animation-delay:1s;
+            animation-delay:1s;
+        }
+        @keyframes move{
+            0%  { top: -27px; }
+            25% { top: -155px; }
+            50% { top: -290px; }
+            75% { top: -420px; }
+        }
+
+        @-webkit-keyframes move {
+            0%  { top: -27px; }
+            25% { top: -155px; }
+            50% { top: -290px; }
+            75% { top: -420px; }
+        }
+        @-moz-keyframes move {
+            0%  { top: -27px; }
+            25% { top: -155px; }
+            50% { top: -290px; }
+            75% { top: -420px; }
+        }
+        @-o-keyframes move {
+            0%  { top: -27px; }
+            25% { top: -155px; }
+            50% { top: -290px; }
+            75% { top: -420px; }
+        }
+        @keyframes move {
+            0%  { top: -27px; }
+            25% { top: -155px; }
+            50% { top: -290px; }
+            75% { top: -420px; }
+        }
+
+
+        @media (max-width: 2560px) and (min-width: 1441px) {
             .lead {
-                font-size: 2rem;
+                font-size: 4.5rem;
+            }
+            .jg-row a{
+                font-size: 4.5rem;
+                /* width: 35vh;*/
+            }
+            .heading-3 {
+                font-size: 12vh;
+            }
+            .Iam b {
+                height: 170px;
+            }
+            .Iam .innerIam {
+                line-height: 250px;
+                top: -45px;
+                left: 0;
+            }
+            .row.jg-row-1 {
+                width: 300px;
+                font-size: 30px;
+            }
+
+            @keyframes move{
+                0%  { top: -25px; }
+                25% { top: -155px; }
+                50% { top: -325px; }
+                75% { top: -475px; }
+            }
+
+            @-webkit-keyframes move {
+                0%  { top: -25px; }
+                25% { top: -155px; }
+                50% { top: -325px; }
+                75% { top: -475px; }
+            }
+            @-moz-keyframes move {
+                0%  { top: -25px; }
+                25% { top: -155px; }
+                50% { top: -325px; }
+                75% { top: -475px; }
+            }
+            @-o-keyframes move {
+                0%  { top: -25px; }
+                25% { top: -155px; }
+                50% { top: -325px; }
+                75% { top: -475px; }
+            }
+            @keyframes move {
+                0%  { top: -45px; }
+                25% { top: -285px; }
+                50% { top: -550px; }
+                75% { top: -800px; }
+            }
+
+        }
+        @media (max-width: 1440px) {
+            .lead {
+                font-size: 2.2rem;
+            }
+            .jg-row a{
+                font-size: 2.2rem;
+                /* width: 35vh;*/
+            }
+            .heading-3 {
+                font-size: 11vh;
+            }
+            .Iam b {
+                height: 95px;
+            }
+            .Iam .innerIam {
+                font-size: 11vh;
+                line-height: 100px;
+                top: 0;
+            }
+
+            @keyframes move{
+                0%  { top: 0; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -300px; }
+            }
+
+            @-webkit-keyframes move {
+                0%  { top: 0; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -300px; }
+            }
+            @-moz-keyframes move {
+                0%  { top: 0; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -300px; }
+            }
+            @-o-keyframes move {
+                0%  { top: 0; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -300px; }
+            }
+            @keyframes move {
+                0%  { top: 0; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -300px; }
+            }
+        }
+
+        @media (max-width: 1220px) {
+            .lead {
+                font-size: 1.9rem;
+            }
+            .jg-row a{
+                font-size: 1.9rem;
+                /* width: 35vh;*/
             }
             .heading-3 {
                 font-size: 12vh;
@@ -135,39 +328,140 @@
             .heading-3 > span {
                 font-size: 12vh;
             }
+        }
+
+        @media (max-width:1024px) {
+            .lead {
+                font-size: 1.7rem;
+            }
+            .jg-row a{
+                font-size: 1.7rem;
+                /* width: 35vh;*/
+            }
+            .Iam b {
+                height: 75px;
+            }
+            .Iam .innerIam {
+                line-height: 120px;
+                top: -20px;
+                left: 0;
+            }
+
+            @keyframes move{
+                0%  { top: -20px; }
+                25% { top: -140px; }
+                50% { top: -270px; }
+                75% { top: -390px; }
+            }
+
+            @-webkit-keyframes move {
+                0%  { top: -20px; }
+                25% { top: -140px; }
+                50% { top: -270px; }
+                75% { top: -390px; }
+            }
+            @-moz-keyframes move {
+                0%  { top: -20px; }
+                25% { top: -140px; }
+                50% { top: -270px; }
+                75% { top: -390px; }
+            }
+            @-o-keyframes move {
+                0%  { top: -20px; }
+                25% { top: -140px; }
+                50% { top: -270px; }
+                75% { top: -390px; }
+            }
+            @keyframes move {
+                0%  { top: -20px; }
+                25% { top: -140px; }
+                50% { top: -270px; }
+                75% { top: -390px; }
+            }
+
+
         }
 
         @media (max-width: 991px) {
             .lead {
                 font-size: 1.7rem;
             }
-            .jg-row {
-                /*width: 60vh;*/
+            .jg-row a{
+                font-size: 1.7rem;
+                /* width: 35vh;*/
             }
             .jg-row {
-                margin-left: 6vh;
+                margin-left: 4vh;
             }
             .heading-3 {
-                font-size: 9vh;
             }
             .heading-3 > span {
-                font-size: 9vh;
+
             }
 
         }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
             .lead {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
-            .jg-row {
+            .jg-row a{
+                font-size: 1.4rem;
                /* width: 35vh;*/
             }
             .heading-3 {
                 font-size: 8.5vh;
+                line-height: 7vh;
             }
             .heading-3 > span {
                 font-size: 8.5vh;
             }
+            .Iam .innerIam {
+                font-size: 8.5vh;
+                line-height: 90px;
+            }
+            .Iam b {
+                height: 56px;
+            }
+
+            .Iam .innerIam {
+                font-size: 8.5vh;
+                line-height: 90px;
+                top: -15px;
+                left: 0;
+            }
+            @keyframes move{
+                0%  { top: -25px; }
+                25% { top: -155px; }
+                50% { top: -325px; }
+                75% { top: -475px; }
+            }
+
+            @-webkit-keyframes move {
+                0%  { top: -15px; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -290px; }
+            }
+            @-moz-keyframes move {
+                0%  { top: -15px; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -290px; }
+            }
+            @-o-keyframes move {
+                0%  { top: -15px; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -290px; }
+            }
+            @keyframes move {
+                0%  { top: -15px; }
+                25% { top: -100px; }
+                50% { top: -200px; }
+                75% { top: -290px; }
+            }
+
+
         }
 
         @media (max-width: 479px) {
@@ -183,7 +477,11 @@
             }
 
             .heading-3 {
-                font-size: 35px;
+                font-size: 6vh;
+            }
+
+            .Iam .innerIam {
+                font-size: 6vh;
             }
 
             .heading-4 {
@@ -198,9 +496,57 @@
             .jg-row a{
                 font-size: 0.8rem;
             }
+
+            .jg-row {
+                margin-left: 2vh;
+                width: 250px;
+            }
+
+
             .jg-row-1 span {
                 font-size: 0.8rem;
             }
+            .Iam b {
+                height: 40px;
+            }
+
+            .Iam .innerIam {
+                line-height: 60px;
+                top: -8px;
+                left: 0;
+            }
+            @keyframes move{
+                0%  { top: -8px; }
+                25% { top: -73px; }
+                50% { top: -133px; }
+                75% { top: -193px; }
+            }
+
+            @-webkit-keyframes move {
+                0%  { top: -8px; }
+                25% { top: -73px; }
+                50% { top: -133px; }
+                75% { top: -193px; }
+            }
+            @-moz-keyframes move {
+                0%  { top: -8px; }
+                25% { top: -73px; }
+                50% { top: -133px; }
+                75% { top: -193px; }
+            }
+            @-o-keyframes move {
+                0%  { top: -8px; }
+                25% { top: -73px; }
+                50% { top: -133px; }
+                75% { top: -193px; }
+            }
+            @keyframes move {
+                0%  { top: -8px; }
+                25% { top: -73px; }
+                50% { top: -133px; }
+                75% { top: -193px; }
+            }
+
 
         }
 
@@ -245,14 +591,42 @@
         </div>
 
         <div class="row align-items-center row-welcome">
-            <div class="col-12">
-                <h1 class="heading-3">Welcome to</h1>
-                <h3 class="ml4 h3 heading-3">
-                    <span class="letters letters-1">the Jungle</span>
+            <div class="col-12 Iam">
+
+
+
+
+                    <h1 class="heading-3">Welcome to</h1>
+                    <b>
+                        <div class="innerIam">
+                             the Jungle <br />
+                    Social Media <br />
+                    digitalBranding <br />
+                    digital Strategy
+                        </div>
+                    </b>
+
+
+
+
+
+               <!-- <h1 class="heading-3">Welcome to</h1>
+                    <div class="jg-row-3">
+                <h3 class="h3 heading-3 innerIam">
+                    the Jungle <br />
+                    Social Media <br />
+                    digitalBranding <br />
+                    digital Strategy
+                </h3>
+                    </div>-->
+
+
+
+                    <!--<span class="letters letters-1">the Jungle</span>
                     <span class="letters letters-2">Social Media</span>
                     <span class="letters letters-3">digital Branding</span>
                     <span class="letters letters-4">digital Strategy</span>
-                </h3>
+                </h3>-->
             </div>
         </div>
 

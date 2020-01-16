@@ -351,6 +351,7 @@ a {
   z-index: 0;
   position: fixed;
   cursor:nw-resize;
+
   width: 100%;
 }
 
