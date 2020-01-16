@@ -129,9 +129,6 @@ a {
   .heading-3 {
     font-size: 8vw;
   }
-  .heading-3 > span {
-    font-size: 8vw;
-  }
 }
 
 @media (max-width: 767px) {
@@ -282,12 +279,8 @@ a {
 
 .heading-3 {
   font-size: 13vh;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
-.heading-3 > span {
-  font-size: 13vh;
-}
-
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -511,9 +504,6 @@ a {
   .heading-3 {
     font-size: 12vh;
   }
-  .heading-3 > span {
-    font-size: 12vh;
-  }
 }
 
 @media (max-width:1024px) {
@@ -584,10 +574,7 @@ a {
   }
   .heading-3 {
     font-size: 8.5vh;
-    line-height: 7vh;
-  }
-  .heading-3 > span {
-    font-size: 8.5vh;
+    line-height: 3vh;
   }
   .Iam .innerIam {
     font-size: 8.5vh;
@@ -647,9 +634,6 @@ a {
   }
   .row-email {
     height: 35vh;
-  }
-  .heading-3 > span {
-    font-size: 35px;
   }
   .heading-3 {
     font-size: 6vh;
