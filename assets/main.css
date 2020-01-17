@@ -112,8 +112,11 @@ a {
   color: #fff;
   font-size: 15px;
 }
+.row-top {
+  height: 20vh;
+}
 .row-welcome {
-  height: 65vh;
+  height: 60vh;
 }
 
 @media (max-width: 991px) {
@@ -195,15 +198,14 @@ a {
   flex: none;
   margin-left: 15vh;
 }
-
 .row-email {
-  height: 40vh;
+  height: 20vh;
 }
-
 #jg-rotate {
   position: relative;
-  width: 20px;
+  width: 1vw;
   transform: rotate(270deg);
+  bottom: -5vh;
 }
 
 .sidepanel {
@@ -393,6 +395,16 @@ a {
   .lead {
     font-size: 60px;
   }
+  .heading-4 {
+    padding: 10px 25px 0;
+    border-radius: 37px;
+    font-size: 38px;
+    line-height: 58px;
+  }
+
+  .paragraph-2 {
+    font-size: 35px;
+  }
   .jg-row a{
     font-size: 45px;
   }
@@ -507,7 +519,7 @@ a {
   }
 }
 
-@media (max-width: 1220px) {
+/*@media (max-width: 1220px) {
   .lead {
     font-size: 30px;
   }
@@ -517,7 +529,7 @@ a {
   .heading-3 {
     font-size: 12vh;
   }
-}
+}*/
 
 @media (max-width:1024px) {
   .lead {
@@ -576,7 +588,7 @@ a {
   }
 }
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
   .lead {
     font-size: 27px;
   }
@@ -586,7 +598,7 @@ a {
   .jg-row {
     margin-left: 4vh;
   }
-}
+}*/
 @media (max-width: 768px) {
   .lead {
     font-size: 23px;
@@ -662,9 +674,6 @@ a {
   .col-12 {
     flex: none;
     margin-left: 1vh;
-  }
-  .row-email {
-    height: 35vh;
   }
   .heading-3 {
     font-size: 40px;
