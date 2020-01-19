@@ -6,7 +6,7 @@ h1 {
   color: #fff;
   font-size: 10vh;
   line-height: 10vh;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
@@ -337,6 +337,7 @@ a {
   position: relative;
   white-space: nowrap;
   font-size: 13vh;
+  font-weight: 600;
   line-height: 130px;
   top: -27px;
   left: 0;
@@ -395,6 +396,11 @@ a {
   .lead {
     font-size: 60px;
   }
+
+  .cursor__ring {
+    width: 390px;
+  }
+
   .heading-4 {
     padding: 10px 25px 0;
     border-radius: 37px;
