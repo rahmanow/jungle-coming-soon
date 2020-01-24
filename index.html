@@ -19,21 +19,9 @@
     <main role="main" class="container-fluid">
         <div class="row row-top">
             <div class="col-2">
-                <div class="div-block-13 mt-4 ml-4">
-                    <h1 class="heading-4" onclick="openNav()">?</h1>
-                </div>
-                <div id="jungleSide" class="sidepanel">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
-                    <div class="row jg-row ml-">
-                        <p class="lead">
-                            Junge ist eine neue Agentür für digitale Kommunikation. Wir helfen Marken und Unternehmen dabei ihren Weg durch den digitalen Dschungel zu finden.
-                        </p>
-                        <a href="mailto:hi@jungle.guide">Haben wir interesse geweckt? <br /> Dann sprechen Sie uns an.</a>
-                    </div>
-                    <div class="row jg-row-1">
-                        <span>t: 0176 3213 7779</span>
-                        <span>m: hi@jungle.guide </span>
-                    </div>
+                <div class="div-block-13 mt-3 ml-2">
+                    <a class="info openbtn" onclick="openNav()">?</a>
+                    <a href="javascript:void(0)" class="info closebtn" onclick="closeNav()">&larr;</a>
                 </div>
             </div>
             <div class="col-8">
@@ -46,21 +34,55 @@
         <div class="row align-items-center row-welcome">
             <div class="col-12 Iam">
                     <h1 class="heading-3">Welcome to</h1>
-                    <b>
+                    <div class="welcome-b">
                         <div class="innerIam">
                              the Jungle <br />
                     Social Media <br />
                     digital Branding <br />
                     digital Strategy
                         </div>
-                    </b>
+                    </div>
             </div>
         </div>
         <div class="row align-items-center row-email ml-4">
             <div id="jg-rotate">
-                <p class="paragraph-2">hi@jungle.guide</p>
+                <p class="email">hi@jungle.guide</p>
             </div>
         </div>
+
+        <div id="jungleside" class="sidepanel">
+            <div class="row">
+                <div class="col-2 tab-column">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Datenschutz</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Impressum</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <div class="row jg-row">
+                                <p class="lead">
+                                    Jungle ist eine neue Agentur für digitale Kommunikation.
+                                    Wir helfen Marken ihr Potential zu entdecken und führen sie erfolgreich durch den digitalen Jungle.
+                                </p>
+                                <a href="mailto:hi@jungle.guide">Klingt interessant? <br /> Dann nehmen Sie gerne Kontakt mit uns auf.</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Datenschutz</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Impressum</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row jg-row-1">
+                <span>t: 0831 51236 36</span>
+                <span>m: hi@jungle.guide </span>
+            </div>
+        </div>
+    </main>
+
+
 
     <script src="assets/jquery-3.4.1.min.js"></script>
     <script src="assets/jquery-3.4.1.slim.min.js"></script>
@@ -84,13 +106,17 @@
         });
         /* Set the width of the sidebar to 250px (show it) */
         function openNav() {
-            document.getElementById("jungleSide").style.width = "80%";
+            document.getElementById("jungleside").style.width = "80%";
+            document.getElementById("list-tab").style.display = "inline";
             document.getElementById("cursor").style.display = "none";
+            document.getElementsByClassName("closebtn")[0].style.display = "inline";
         }
         /* Set the width of the sidebar to 0 (hide it) */
         function closeNav() {
-            document.getElementById("jungleSide").style.width = "0";
+            document.getElementById("jungleside").style.width = "0";
+            document.getElementById("list-tab").style.display = "none";
             document.getElementById("cursor").style.display = "inline";
+            document.getElementsByClassName("closebtn")[0].style.display = "none";
         }
     </script>
 </body>
