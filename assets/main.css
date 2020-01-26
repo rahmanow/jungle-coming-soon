@@ -1,4 +1,26 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:none}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,main,menu,nav,section,summary
+{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden], template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline:0; color: #1b1e21; text-decoration: none;}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:none}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 h1 {
   margin-top: 20px;
@@ -53,7 +75,7 @@ a {
   background-image: url("bg.png");
   background-position: -25px -50px;
   background-size: calc(100% + 50px);
-  font-family: 'Spacegrotesk', 'OpenSans';
+  font-family: 'Spacegrotesk', sans-serif;
   top: 0;
   z-index: 0;
   position: fixed;
@@ -95,11 +117,21 @@ a {
   border: 1px none #000;
   background-color: transparent;
 }
+div:nth-child(1) > div > a.info.openbtn {
+  color: #fff;
+  text-decoration: none;
 
+}
+div:nth-child(1) > div > a.info.closebtn {
+  color: #333;
+  text-decoration: none;
+}
 .openbtn {
   margin: 0;
-  line-height: 45px;
   border-color: #fff;
+  padding-top: 8px;
+  color: #fff;
+  text-decoration: none;
 }
 .info {
   border-style: solid;
@@ -111,6 +143,7 @@ a {
   min-width: 45px;
   min-height: 45px;
   text-align: center;
+  line-height: 1.2em;
 }
 .closebtn {
   border-color: #333;
@@ -118,6 +151,7 @@ a {
   margin-left: -45px;
   display: none;
   z-index: 100;
+  color: #333;
   text-decoration: none;
 }
 
@@ -231,7 +265,7 @@ a {
   left: 0;
   background-color: #fff; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 16vh; /* Place content 60px from the top */
+  padding-top: 10vh; /* Place content 60px from the top */
   transition: 0.4s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
@@ -248,6 +282,9 @@ a {
 
 .jg-row {
   width: 100%;
+  min-height:85vh;
+  display: flow-root;
+
 }
 .jg-row a {
   padding: 15px 8px 8px 0;
@@ -295,12 +332,27 @@ a {
 a:not([href]):not([tabindex]) {
   color: #fff;
 }
-
+a.info:nth-child(1) {
+  color: #fff;
+  text-decoration: none;
+}
+a.info:nth-child(2) {
+  color: #333;
+  text-decoration: none;
+}
+a.info:nth-child(1):hover {
+  color: #fff;
+  text-decoration: none;
+}
+a.info:nth-child(2):hover {
+  color: #333;
+  text-decoration: none;
+}
 #list-home-list, #list-profile-list, #list-messages-list {
   border: none;
   text-align: center;
   left: -4vw;
-  bottom: -17vw;
+  bottom: -14vw;
   margin: 6vh 0;
   font-size: 20px;
   -webkit-transform: rotate(-90deg);
@@ -311,6 +363,9 @@ a:not([href]):not([tabindex]) {
   display: inline-block;
   color: #212529;
   font-family: 'Spacegrotesk', sans-serif;
+}
+#list-profile h2, p {
+  color: #333;
 }
 .list-group-item.active {
   font-weight: bold;
@@ -443,7 +498,7 @@ a:not([href]):not([tabindex]) {
   #list-home-list, #list-profile-list, #list-messages-list {
     left: -4vw;
     bottom: -35vh;
-    40px
+    font-size:40px;
   }
   /*.heading-4 {
     padding: 10px 25px 0;
