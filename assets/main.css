@@ -253,7 +253,6 @@ div:nth-child(1) > div > a.info.closebtn {
   position: relative;
   width: 1vw;
   transform: rotate(270deg);
-  bottom: -5vh;
 }
 
 .sidepanel {
@@ -280,10 +279,15 @@ div:nth-child(1) > div > a.info.closebtn {
   color: #666;
 }
 
+div#list-home {
+  min-height: 80vh;
+}
+
 .jg-row {
   width: 100%;
-  min-height:85vh;
+  height: 75vh;
   display: flow-root;
+  position: relative;
 
 }
 .jg-row a {
@@ -305,11 +309,11 @@ div:nth-child(1) > div > a.info.closebtn {
   color: #111;
 }
 .row.jg-row-1 {
-  position: absolute;
-  right: 25px;
-  bottom: 20px;
+  bottom: 3vh;
   display: grid;
-  width: 170px;
+  float: right;
+  position: relative;
+  right: 3vh;
 }
 
 .heading-3 {
@@ -323,9 +327,18 @@ div:nth-child(1) > div > a.info.closebtn {
 
 }
 .tab-column {
-  position: relative;
-  left: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 5vh;
 }
+div#nav-tabContent {
+  position: absolute;
+  left: 13vh;
+  bottom: 5vh;
+  top: 5vh;
+  width: 90%;
+}
+
 #list-tab {
   display: none;
 }
@@ -351,8 +364,6 @@ a.info:nth-child(2):hover {
 #list-home-list, #list-profile-list, #list-messages-list {
   border: none;
   text-align: center;
-  left: -4vw;
-  bottom: -14vw;
   margin: 6vh 0;
   font-size: 20px;
   -webkit-transform: rotate(-90deg);
@@ -662,7 +673,6 @@ a.info:nth-child(2):hover {
     margin-bottom: 10px;
   }
   .row.jg-row-1 {
-    width: 195px;
     font-size: 20px;
   }
   .email {
@@ -742,15 +752,12 @@ a.info:nth-child(2):hover {
     /* width: 35vh;*/
   }
   #list-home-list, #list-profile-list, #list-messages-list {
-    left: -3vw;
-    bottom: -12vw;
     font-size: 20px;
   }
   .cursor__ring {
     width: 200px;
   }
   .row.jg-row-1 {
-    width: 200px;
     font-size: 20px;
   }
   .email {
@@ -832,12 +839,9 @@ a.info:nth-child(2):hover {
     font-size: 23px;
   }
   #list-home-list, #list-profile-list, #list-messages-list {
-    left: -2vw;
-    bottom: -17vw;
     font-size: 14px;
   }
   .row.jg-row-1 {
-    width: 170px;
     font-size: 14px;
   }
   .jg-row a{
